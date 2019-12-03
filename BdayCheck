@@ -1,1 +1,5 @@
 #This is be the file we use
+
+data = {'Names': ['Tyler Kish', 'Alan Pippin', 'Jack Stahl', 'Eli Shingleton', 'Kailee DeVilbiss', 'Ciana White'],
+        'Birthdays': ['24-Jan-98', '18-Feb-99', '4-Feb-00', '29-Jan-00', '22-Jul-00', '20-Sep-99'],
+        'Famous Birthdays': ['John Belushi', 'Dr. Dre', 'Rosa Parks', 'Oprah', 'Alex Trebek', 'Sophia Loren']}
