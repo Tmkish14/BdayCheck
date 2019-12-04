@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Dec  3 11:46:46 2019
+
+@author: Kailee
+"""
+import pandas as pd
+import random
+
+
+def HBDmessage ():
+    """This function retrieves a random message and returns it"""
+    birthdaymessage = {'message': ["Happy Womb Emancipation Day", "Congratulations on not dying another year!", "Hope you have a day filled with cake and happiness!", "I hope your birthday is better than mine was, and there are no tears!", "HBD, dude"]}
+    bddf = pd.DataFrame(birthdaymessage)
+    number = random.randint(0,4)
+    return bddf['message'][number]
+
+BDprint = HBDmessage()
+print(BDprint)
