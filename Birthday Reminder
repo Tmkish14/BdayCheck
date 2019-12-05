@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Dec  4 19:19:23 2019
+
+@author: ajpip
+"""
+
+import time
+import os
+
+from datetime import datetime
+
+import pandas as pd
+birthdayfile = pd.read_csv(r'C:\Users\ajpip\Documents\Fall 2019\CTP\Birthdays.csv')
+
+birthDay = {'Name' :['Jake', 'Tyler', 'Noah', 'Patrick', 'Wyatt', 'Carter', 'Treyjay'
+                     'Ethan', 'Chloe', 'Michelle', 'Rachel', 'Jacob', 'Zoe', 
+                     'Shayree', 'Kendall', 'Gretchen', 'Anna', 'Hannah', 'Tori',
+                     'Troy', 'Zack', 'Megan', 'Drake', 'Josh'],
+            'Month' :['January', 'February', 'March', 'April', 'May', 'June', 
+                      'July', 'August', 'September', 'October', 'November', 
+                      'December'],
+            'day' :[1, 2, 3, 5, 6, 8, 9, 10, 11, 14, 19, 22, 23, 24, 25, 27, 28,
+                    31,],
+            'Year' :[1985, 1989, 1990, 1991, 1992, 1994, 1995, 1996, 1997, 1998,
+                     1999, 2000, 2001, 2004,]}
+
+
+def BdayRem():
+    """ This will remind the user when someones birthday is """
+    
+    while true:
+        
+
+    
