@@ -1,7 +1,9 @@
 #It will run all you have to do is paste in and run it, it will give you a prompt with your birthday, and the month!
-day = int(input("Input Just the Day of your Birthday: "))
-month = str.lower(input("Input month of birth such as (January, Febuary, Etc)12 : "))
-if month == 'december':
+day = int(input("Input just the day of your birthday (0-31):"))
+month = str.lower(input("Input the month of your birthday (January, February, Etc):"))
+if day > 31:
+    print("error: date does not exist.")
+elif month == 'december':
 	astro_sign = 'Sagittarius' if (day < 22) else 'Capricorn'
 elif month == 'january':
 	astro_sign = 'Capricorn' if (day < 20) else 'Aquarius'
@@ -27,4 +29,4 @@ elif month == 'november':
 	astro_sign = 'Scorpio' if (day < 22) else 'Sagittarius'
 else:
     print("Invalid Answer")
-print("Your Astrological sign is :",astro_sign)
+print("Your Astrological sign is:",astro_sign)
