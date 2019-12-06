@@ -11,7 +11,9 @@ import pandas as pd
 import random
 from datetime import datetime
 
-birthdayDB= {'Tyler':'January 24 1998','Naomi':'December 29 1998','Tom':'November 4 2019',}
+birthdayDB= {'Tyler':'January 24','Naomi':'December 29','Tom':'November 4','Troy':'May 5', 'Hannah':'June 18',
+             'Jake':'July 16', 'Chris':'March 4','Zack':'November 11', 'Noah':'December 22', 'Carter':'April 13',
+             'Joe':'February 20', 'Logan':'May 22', 'Wyatt':'September 12','Luke':'October 27'}
 
 while True:
     print('Enter a name : (or press Enter to promt your zodiac sign)')
@@ -20,7 +22,7 @@ while True:
         break
     if name in birthdayDB:
         print(birthdayDB[name]+ ' is the birthday of ' +name)
-        print(BDprint) #This prints a random birthday message
+        print(BDprint)
     else:
         print('Your name is not in the database, enter a valid name')
 
@@ -59,10 +61,9 @@ print("Your Astrological sign is:",astro_sign)
 
 def HBDmessage ():
     """This function retrieves a random message and returns it"""
-    birthdaymessage = {'message': ["Happy Womb Emancipation Day", "Congratulations on not dying another year!", "Hope you have a day filled with cake and happiness!", "I hope your birthday is better than mine was, and there are no tears!", "HBD, dude"]}#These are the messages I chose change them they're sad
-    bddf = pd.DataFrame(birthdaymessage) #This turns the messages into a dataframe
-    number = random.randint(0,4)#This sets the variable number to 1 of 5 different numbers
-    return bddf['message'][number]# this returns the message from the datebase of the index number which is the random number
+    birthdaymessage = {'message': ["Happy Womb Emancipation Day", "Congratulations on not dying another year!", "Hope you have a day filled with cake and happiness!", "I hope your birthday is better than mine was, and there are no tears!", "HBD, dude"]}
+    bddf = pd.DataFrame(birthdaymessage)
+    number = random.randint(0,4)
+    return bddf['message'][number]
 
-BDprint = HBDmessage() #this sets the function to a unique variable to be used in other parts of the code
-
+BDprint = HBDmessage()
