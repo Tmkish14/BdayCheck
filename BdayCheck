@@ -3,3 +3,17 @@
 data = {'Names': ['Tyler Kish', 'Alan Pippin', 'Jack Stahl', 'Eli Shingleton', 'Kailee DeVilbiss', 'Ciana White'],
         'Birthdays': ['24-Jan-98', '18-Feb-99', '4-Feb-00', '29-Jan-00', '22-Jul-00', '20-Sep-99'],
         'Famous Birthdays': ['John Belushi', 'Dr. Dre', 'Rosa Parks', 'Oprah', 'Alex Trebek', 'Sophia Loren']}
+
+
+
+birthdayDB= {'Tyler':'January 24 1998','Naomi':'December 29 1998','Tom':'November 4 2019'}
+
+while True:
+    print('Enter a name : (press only Enter to close)')
+    name = input()
+    if name == '':
+        break
+    if name in birthdayDB:
+        print(birthdayDB[name]+ ' is the birthday of ' +name)
+    else:
+        print('Thanks for using our Birthday Database')
