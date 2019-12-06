@@ -24,12 +24,29 @@ birthDay = {'Name' :['Jake', 'Tyler', 'Noah', 'Patrick', 'Wyatt', 'Carter', 'Tre
                     31,],
             'Year' :[1985, 1989, 1990, 1991, 1992, 1994, 1995, 1996, 1997, 1998,
                      1999, 2000, 2001, 2004,]}
+            
+bfdf = pd.DataFrame.from_dict(birthDay, orient='index')
 
 
-def BdayRem():
-    """ This will remind the user when someones birthday is """
+def reminder(name):
+    """ this function will let the user know when the persons birthday is"""
     
-    while true:
-        
-
-    
+    birthDay = open(r'C:\Users\ajpip\Documents\Fall 2019\CTP\Birthdays.csv')
+    today = time.strftime('%m%d')
+    flag = 0
+    for line in birthDay:
+        if today in line:
+            line = line.split(' ')
+            flag = 1
+            os.system('notify-send "Birthdays today: ' + line[1] + ' ' + line[2] + ' ')
+        if flag == 0:
+            os.system ('please select name from dict')
+            
+        if __name__ == '__main__':
+            print('their birthday is on: ' )
+            
+        else:
+            print('please select name from dict')
+            
+print(reminder('carter'))
+            
