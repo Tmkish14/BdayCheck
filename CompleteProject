@@ -6,8 +6,10 @@ Created on Fri Dec  6 14:12:49 2019
 """
 import pandas as pd
 import random
-
-birthdayDB= {'Tyler':'January 24','Naomi':'December 29','Tom':'November 4'}
+#This is the database we are using for the checker, we removed year due to formatting issues
+birthdayDB= {'Tyler':'January 24','Naomi':'December 29','Tom':'November 4','Troy':'May 5', 'Hannah':'June 18',
+             'Jake':'July 16', 'Chris':'March 4','Zack':'November 11', 'Noah':'December 22', 'Carter':'April 13',
+             'Joe':'February 20', 'Logan':'May 22', 'Wyatt':'September 12','Luke':'October 27'}
 
 def HBDmessage ():
     """This function retrieves a random message and returns it"""#Messages below are the birthday messages
